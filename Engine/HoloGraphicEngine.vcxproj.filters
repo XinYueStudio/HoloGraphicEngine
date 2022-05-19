@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Source\Core\Init\init_glew.cpp">
+      <Filter>Core\Init</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Core\Init\init_glut.cpp">
+      <Filter>Core\Init</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Prefabs\Earth.cpp">
+      <Filter>Prefabs</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Prefabs\Quad.cpp">
+      <Filter>Prefabs</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Prefabs\Skybox.cpp">
+      <Filter>Prefabs</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Prefabs\Sphere.cpp">
+      <Filter>Prefabs</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Prefabs\Triangle.cpp">
+      <Filter>Prefabs</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Render\Camera.cpp">
+      <Filter>Render</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Render\Model.cpp">
+      <Filter>Render</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Render\Scene.cpp">
+      <Filter>Render</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Render\Shader.cpp">
+      <Filter>Render</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\ProjectManager.cpp" />
+    <ClCompile Include="Source\Prefabs\Cube.cpp">
+      <Filter>Prefabs</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Prefabs\SolarSystem.cpp">
+      <Filter>Prefabs</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Core">
+      <UniqueIdentifier>{6dddc4c3-9d38-462e-b7da-95bad163a352}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Init">
+      <UniqueIdentifier>{3fe0dacf-375f-4366-b353-d142c90fa07a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources">
+      <UniqueIdentifier>{5501a296-1c22-4f99-b1a0-3a09c940e5e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Prefabs">
+      <UniqueIdentifier>{4ebe592d-442d-41c0-bb73-2ed2b5d1c9f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\Textures">
+      <UniqueIdentifier>{f8998451-09a7-4013-b97a-b7babdc4bfac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\Shaders">
+      <UniqueIdentifier>{6818c3cf-3f2d-451d-ba9f-bd0890c6a9cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Render">
+      <UniqueIdentifier>{c1982bae-c427-4c93-a10d-efd16d57dc70}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utilities">
+      <UniqueIdentifier>{4f660dfd-f02a-4c35-ac60-f77fb9905819}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\Core\Init\window_info.h">
+      <Filter>Core\Init</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Init\context_info.h">
+      <Filter>Core\Init</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Init\framebuffer_info.h">
+      <Filter>Core\Init</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Init\init_glew.h">
+      <Filter>Core\Init</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Init\init_glut.h">
+      <Filter>Core\Init</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Init\listener.h">
+      <Filter>Core\Init</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\VertexFormat.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Prefabs\Earth.h">
+      <Filter>Prefabs</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Prefabs\Quad.h">
+      <Filter>Prefabs</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Prefabs\Skybox.h">
+      <Filter>Prefabs</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Prefabs\Sphere.h">
+      <Filter>Prefabs</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Prefabs\Triangle.h">
+      <Filter>Prefabs</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Render\Camera.h">
+      <Filter>Render</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Render\Model.h">
+      <Filter>Render</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Render\Scene.h">
+      <Filter>Render</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Render\Shader.h">
+      <Filter>Render</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Utilities\stb_image.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\GameObject.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\ProjectManager.h" />
+    <ClInclude Include="Source\Prefabs\Cube.h">
+      <Filter>Prefabs</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Prefabs\SolarSystem.h">
+      <Filter>Prefabs</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Utilities\Utilities.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Source\Resources\Shaders\cube_fragment_shader.glsl">
+      <Filter>Resources\Shaders</Filter>
+    </None>
+    <None Include="Source\Resources\Shaders\cube_vertex_shader.glsl">
+      <Filter>Resources\Shaders</Filter>
+    </None>
+    <None Include="Source\Resources\Shaders\earth_fragment_shader.glsl">
+      <Filter>Resources\Shaders</Filter>
+    </None>
+    <None Include="Source\Resources\Shaders\earth_vertex_shader.glsl">
+      <Filter>Resources\Shaders</Filter>
+    </None>
+    <None Include="Source\Resources\Shaders\skybox_fragment_shader.glsl">
+      <Filter>Resources\Shaders</Filter>
+    </None>
+    <None Include="Source\Resources\Shaders\skybox_vertex_shader.glsl">
+      <Filter>Resources\Shaders</Filter>
+    </None>
+    <None Include="Source\Resources\Shaders\sphere_fragment_shader.glsl">
+      <Filter>Resources\Shaders</Filter>
+    </None>
+    <None Include="Source\Resources\Shaders\sphere_vertex_shader.glsl">
+      <Filter>Resources\Shaders</Filter>
+    </None>
+    <None Include="Source\Resources\Shaders\sun_fragment_shader.glsl">
+      <Filter>Resources\Shaders</Filter>
+    </None>
+    <None Include="Source\Resources\Shaders\sun_vertex_shader.glsl">
+      <Filter>Resources\Shaders</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Source\Resources\Textures\Crate.bmp">
+      <Filter>Resources\Textures</Filter>
+    </Image>
+    <Image Include="Source\Resources\Textures\Earth.dds">
+      <Filter>Resources\Textures</Filter>
+    </Image>
+    <Image Include="Source\Resources\Textures\Jupiter.dds">
+      <Filter>Resources\Textures</Filter>
+    </Image>
+    <Image Include="Source\Resources\Textures\Mars.dds">
+      <Filter>Resources\Textures</Filter>
+    </Image>
+    <Image Include="Source\Resources\Textures\Mercury.dds">
+      <Filter>Resources\Textures</Filter>
+    </Image>
+    <Image Include="Source\Resources\Textures\Moon.dds">
+      <Filter>Resources\Textures</Filter>
+    </Image>
+    <Image Include="Source\Resources\Textures\Neptune.dds">
+      <Filter>Resources\Textures</Filter>
+    </Image>
+    <Image Include="Source\Resources\Textures\Saturn.dds">
+      <Filter>Resources\Textures</Filter>
+    </Image>
+    <Image Include="Source\Resources\Textures\SkyboxNegativeX.png">
+      <Filter>Resources\Textures</Filter>
+    </Image>
+    <Image Include="Source\Resources\Textures\SkyboxNegativeY.png">
+      <Filter>Resources\Textures</Filter>
+    </Image>
+    <Image Include="Source\Resources\Textures\SkyboxNegativeZ.png">
+      <Filter>Resources\Textures</Filter>
+    </Image>
+    <Image Include="Source\Resources\Textures\SkyboxPositiveX.png">
+      <Filter>Resources\Textures</Filter>
+    </Image>
+    <Image Include="Source\Resources\Textures\SkyboxPositiveY.png">
+      <Filter>Resources\Textures</Filter>
+    </Image>
+    <Image Include="Source\Resources\Textures\SkyboxPositiveZ.png">
+      <Filter>Resources\Textures</Filter>
+    </Image>
+    <Image Include="Source\Resources\Textures\Sun.dds">
+      <Filter>Resources\Textures</Filter>
+    </Image>
+    <Image Include="Source\Resources\Textures\Uranus.dds">
+      <Filter>Resources\Textures</Filter>
+    </Image>
+    <Image Include="Source\Resources\Textures\Venus.dds">
+      <Filter>Resources\Textures</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

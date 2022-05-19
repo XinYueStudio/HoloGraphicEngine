@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\Core\Init\init_glew.cpp" />
+    <ClCompile Include="Source\Core\Init\init_glut.cpp" />
+    <ClCompile Include="Source\Prefabs\Cube.cpp" />
+    <ClCompile Include="Source\Prefabs\SolarSystem.cpp" />
+    <ClCompile Include="Source\ProjectManager.cpp" />
+    <ClCompile Include="Source\Prefabs\Earth.cpp" />
+    <ClCompile Include="Source\Prefabs\Quad.cpp" />
+    <ClCompile Include="Source\Prefabs\Skybox.cpp" />
+    <ClCompile Include="Source\Prefabs\Sphere.cpp" />
+    <ClCompile Include="Source\Prefabs\Triangle.cpp" />
+    <ClCompile Include="Source\Render\Camera.cpp" />
+    <ClCompile Include="Source\Render\Model.cpp" />
+    <ClCompile Include="Source\Render\Scene.cpp" />
+    <ClCompile Include="Source\Render\Shader.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\Core\Init\context_info.h" />
+    <ClInclude Include="Source\Core\Init\framebuffer_info.h" />
+    <ClInclude Include="Source\Core\Init\init_glew.h" />
+    <ClInclude Include="Source\Core\Init\init_glut.h" />
+    <ClInclude Include="Source\Core\Init\listener.h" />
+    <ClInclude Include="Source\Core\Init\window_info.h" />
+    <ClInclude Include="Source\Core\GameObject.h" />
+    <ClInclude Include="Source\Core\VertexFormat.h" />
+    <ClInclude Include="Source\Prefabs\Cube.h" />
+    <ClInclude Include="Source\Prefabs\SolarSystem.h" />
+    <ClInclude Include="Source\ProjectManager.h" />
+    <ClInclude Include="Source\Prefabs\Earth.h" />
+    <ClInclude Include="Source\Prefabs\Quad.h" />
+    <ClInclude Include="Source\Prefabs\Skybox.h" />
+    <ClInclude Include="Source\Prefabs\Sphere.h" />
+    <ClInclude Include="Source\Prefabs\Triangle.h" />
+    <ClInclude Include="Source\Render\Camera.h" />
+    <ClInclude Include="Source\Render\Model.h" />
+    <ClInclude Include="Source\Render\Scene.h" />
+    <ClInclude Include="Source\Render\Shader.h" />
+    <ClInclude Include="Source\Utilities\stb_image.h" />
+    <ClInclude Include="Source\Utilities\Utilities.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Source\Resources\Shaders\cube_fragment_shader.glsl">
+      <DeploymentContent>false</DeploymentContent>
+    </None>
+    <None Include="Source\Resources\Shaders\cube_vertex_shader.glsl">
+      <DeploymentContent>false</DeploymentContent>
+    </None>
+    <None Include="Source\Resources\Shaders\earth_fragment_shader.glsl">
+      <DeploymentContent>false</DeploymentContent>
+    </None>
+    <None Include="Source\Resources\Shaders\earth_vertex_shader.glsl">
+      <DeploymentContent>false</DeploymentContent>
+    </None>
+    <None Include="Source\Resources\Shaders\skybox_fragment_shader.glsl">
+      <DeploymentContent>false</DeploymentContent>
+    </None>
+    <None Include="Source\Resources\Shaders\skybox_vertex_shader.glsl">
+      <DeploymentContent>false</DeploymentContent>
+    </None>
+    <None Include="Source\Resources\Shaders\sphere_fragment_shader.glsl">
+      <DeploymentContent>false</DeploymentContent>
+    </None>
+    <None Include="Source\Resources\Shaders\sphere_vertex_shader.glsl">
+      <DeploymentContent>false</DeploymentContent>
+    </None>
+    <None Include="Source\Resources\Shaders\sun_fragment_shader.glsl">
+      <DeploymentContent>false</DeploymentContent>
+    </None>
+    <None Include="Source\Resources\Shaders\sun_vertex_shader.glsl">
+      <DeploymentContent>false</DeploymentContent>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Source\Resources\Textures\Crate.bmp" />
+    <Image Include="Source\Resources\Textures\Earth.dds" />
+    <Image Include="Source\Resources\Textures\Jupiter.dds" />
+    <Image Include="Source\Resources\Textures\Mars.dds" />
+    <Image Include="Source\Resources\Textures\Mercury.dds" />
+    <Image Include="Source\Resources\Textures\Moon.dds" />
+    <Image Include="Source\Resources\Textures\Neptune.dds" />
+    <Image Include="Source\Resources\Textures\Saturn.dds" />
+    <Image Include="Source\Resources\Textures\SkyboxNegativeX.png" />
+    <Image Include="Source\Resources\Textures\SkyboxNegativeY.png" />
+    <Image Include="Source\Resources\Textures\SkyboxNegativeZ.png" />
+    <Image Include="Source\Resources\Textures\SkyboxPositiveX.png" />
+    <Image Include="Source\Resources\Textures\SkyboxPositiveY.png" />
+    <Image Include="Source\Resources\Textures\SkyboxPositiveZ.png" />
+    <Image Include="Source\Resources\Textures\Sun.dds" />
+    <Image Include="Source\Resources\Textures\Uranus.dds" />
+    <Image Include="Source\Resources\Textures\Venus.dds" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{87BFEF26-A4C6-417A-AD65-568F0DE10AA7}</ProjectGuid>
+    <RootNamespace>Engine</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
+    <ProjectName>HoloGraphicEngine</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir)Source\Utilities;$(ProjectDir)\Source\Core;$(ProjectDir)\Source\Prefabs;$(ProjectDir)\Source\Render;$(ProjectDir)\Dependencies\soil2\include\;$(ProjectDir)Dependencies\freeglut\include\GL\;$(ProjectDir)Dependencies\glew\include\;$(ProjectDir)Dependencies\glm\;$(ProjectDir)Dependencies\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_MBCS;%(PreprocessorDefinitions);_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>Dependencies\freeglut\lib;Dependencies\glew\lib;</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opengl32.lib;freeglut.lib;glew32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy /Y "$(ProjectDir)Source\Resources\*" "$(TargetDir)Resources\*"
+xcopy /Y "$(ProjectDir)Source\Resources\Shaders\*" "$(TargetDir)Resources\Shaders\*"
+xcopy /Y "$(ProjectDir)Source\Resources\Textures\*" "$(TargetDir)Resources\Textures\*"
+xcopy /Y "$(ProjectDir)Dependencies\freeglut\bin\*" "$(TargetDir)*"
+xcopy /Y "$(ProjectDir)Dependencies\glew\bin\*" "$(TargetDir)*"
+xcopy /Y "$(ProjectDir)Dependencies\glew\lib\*" "$(TargetDir)*"
+xcopy /Y "$(ProjectDir)Dependencies\soil2\lib\*" "$(TargetDir)*"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir)Source\Utilities;$(ProjectDir)\Source\Core;$(ProjectDir)\Source\Prefabs;$(ProjectDir)\Source\Render;$(ProjectDir)\Dependencies\soil2\include\;$(ProjectDir)Dependencies\freeglut\include\GL\;$(ProjectDir)Dependencies\glew\include\;$(ProjectDir)Dependencies\glm\;$(ProjectDir)Dependencies\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

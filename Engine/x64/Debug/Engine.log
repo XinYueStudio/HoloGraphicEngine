@@ -1,0 +1,57 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(391,5): warning MSB8028: 中间目录(x64\Debug\)包含从另一个项目(Engine.vcxproj)共享的文件。   这会导致错误的清除和重新生成行为。
+  init_glew.cpp
+  init_glut.cpp
+  Cube.cpp
+  SolarSystem.cpp
+  ProjectManager.cpp
+  Earth.cpp
+  Quad.cpp
+  Skybox.cpp
+  Sphere.cpp
+  Triangle.cpp
+  Camera.cpp
+  Model.cpp
+  Scene.cpp
+  Shader.cpp
+  正在生成代码...
+  Engine.vcxproj -> F:\外包\OpenGL-Engine-master\x64\Debug\HoloGraphicEngine.lib
+  复制了 0 个文件
+  F:\外包\OpenGL-Engine-master\Engine\Source\Resources\Shaders\cube_fragment_shader.glsl
+  F:\外包\OpenGL-Engine-master\Engine\Source\Resources\Shaders\cube_vertex_shader.glsl
+  F:\外包\OpenGL-Engine-master\Engine\Source\Resources\Shaders\earth_fragment_shader.glsl
+  F:\外包\OpenGL-Engine-master\Engine\Source\Resources\Shaders\earth_vertex_shader.glsl
+  F:\外包\OpenGL-Engine-master\Engine\Source\Resources\Shaders\skybox_fragment_shader.glsl
+  F:\外包\OpenGL-Engine-master\Engine\Source\Resources\Shaders\skybox_vertex_shader.glsl
+  F:\外包\OpenGL-Engine-master\Engine\Source\Resources\Shaders\sphere_fragment_shader.glsl
+  F:\外包\OpenGL-Engine-master\Engine\Source\Resources\Shaders\sphere_vertex_shader.glsl
+  F:\外包\OpenGL-Engine-master\Engine\Source\Resources\Shaders\sun_fragment_shader.glsl
+  F:\外包\OpenGL-Engine-master\Engine\Source\Resources\Shaders\sun_vertex_shader.glsl
+  复制了 10 个文件
+  F:\外包\OpenGL-Engine-master\Engine\Source\Resources\Textures\Crate.bmp
+  F:\外包\OpenGL-Engine-master\Engine\Source\Resources\Textures\Earth.dds
+  F:\外包\OpenGL-Engine-master\Engine\Source\Resources\Textures\Jupiter.dds
+  F:\外包\OpenGL-Engine-master\Engine\Source\Resources\Textures\Mars.dds
+  F:\外包\OpenGL-Engine-master\Engine\Source\Resources\Textures\Mercury.dds
+  F:\外包\OpenGL-Engine-master\Engine\Source\Resources\Textures\Moon.dds
+  F:\外包\OpenGL-Engine-master\Engine\Source\Resources\Textures\Neptune.dds
+  F:\外包\OpenGL-Engine-master\Engine\Source\Resources\Textures\Saturn.dds
+  F:\外包\OpenGL-Engine-master\Engine\Source\Resources\Textures\SkyboxNegativeX.png
+  F:\外包\OpenGL-Engine-master\Engine\Source\Resources\Textures\SkyboxNegativeY.png
+  F:\外包\OpenGL-Engine-master\Engine\Source\Resources\Textures\SkyboxNegativeZ.png
+  F:\外包\OpenGL-Engine-master\Engine\Source\Resources\Textures\SkyboxPositiveX.png
+  F:\外包\OpenGL-Engine-master\Engine\Source\Resources\Textures\SkyboxPositiveY.png
+  F:\外包\OpenGL-Engine-master\Engine\Source\Resources\Textures\SkyboxPositiveZ.png
+  F:\外包\OpenGL-Engine-master\Engine\Source\Resources\Textures\Sun.dds
+  F:\外包\OpenGL-Engine-master\Engine\Source\Resources\Textures\Uranus.dds
+  F:\外包\OpenGL-Engine-master\Engine\Source\Resources\Textures\Venus.dds
+  复制了 17 个文件
+  F:\外包\OpenGL-Engine-master\Engine\Dependencies\freeglut\bin\freeglut.dll
+  复制了 1 个文件
+  F:\外包\OpenGL-Engine-master\Engine\Dependencies\glew\bin\glew32.dll
+  F:\外包\OpenGL-Engine-master\Engine\Dependencies\glew\bin\glewinfo.exe
+  F:\外包\OpenGL-Engine-master\Engine\Dependencies\glew\bin\visualinfo.exe
+  复制了 3 个文件
+  F:\外包\OpenGL-Engine-master\Engine\Dependencies\glew\lib\glew32.lib
+  复制了 1 个文件
+  F:\外包\OpenGL-Engine-master\Engine\Dependencies\soil2\lib\soil2.lib
+  复制了 1 个文件
