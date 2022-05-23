@@ -3,7 +3,7 @@
 // User-defined Headers
 #include "Core\Init\init_glut.h"
 #include "../Source/Render/Scene.h"
-
+#include "Core\PluginInterface.h"
 namespace  HoloGraphicEngine
 {
 	/**
@@ -57,6 +57,7 @@ namespace  HoloGraphicEngine
  
 		/* Engine's main Camera Manager - Same one set in Scene manager */
 		Camera* Camera_;
- 
+
+		std::map<std::string, PluginInterface*>  PluginInterface_;
 	};
 }

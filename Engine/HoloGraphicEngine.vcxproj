@@ -21,6 +21,14 @@
   <ItemGroup>
     <ClCompile Include="Source\Core\Init\init_glew.cpp" />
     <ClCompile Include="Source\Core\Init\init_glut.cpp" />
+    <ClCompile Include="Source\Plugins\MicroLight\Matrix2.cpp" />
+    <ClCompile Include="Source\Plugins\MicroLight\Matrix3.cpp" />
+    <ClCompile Include="Source\Plugins\MicroLight\Matrix3x3.cpp" />
+    <ClCompile Include="Source\Plugins\MicroLight\Matrix4.cpp" />
+    <ClCompile Include="Source\Plugins\MicroLight\Matrix4x4.cpp" />
+    <ClCompile Include="Source\Plugins\MicroLight\MicroLightIRTracking.cpp" />
+    <ClCompile Include="Source\Plugins\MicroLight\MicroLightLibrary.cpp" />
+    <ClCompile Include="Source\Plugins\MicroLight\TrackingAPI.cpp" />
     <ClCompile Include="Source\Prefabs\Cube.cpp" />
     <ClCompile Include="Source\Prefabs\SolarSystem.cpp" />
     <ClCompile Include="Source\ProjectManager.cpp" />
@@ -42,7 +50,22 @@
     <ClInclude Include="Source\Core\Init\listener.h" />
     <ClInclude Include="Source\Core\Init\window_info.h" />
     <ClInclude Include="Source\Core\GameObject.h" />
+    <ClInclude Include="Source\Core\PluginInterface.h" />
     <ClInclude Include="Source\Core\VertexFormat.h" />
+    <ClInclude Include="Source\Plugins\MicroLight\HoloGraphicUtilities.h" />
+    <ClInclude Include="Source\Plugins\MicroLight\Matrix2.h" />
+    <ClInclude Include="Source\Plugins\MicroLight\Matrix3.h" />
+    <ClInclude Include="Source\Plugins\MicroLight\Matrix3x3.h" />
+    <ClInclude Include="Source\Plugins\MicroLight\Matrix4.h" />
+    <ClInclude Include="Source\Plugins\MicroLight\Matrix4x4.h" />
+    <ClInclude Include="Source\Plugins\MicroLight\MicroLightIRTracking.h" />
+    <ClInclude Include="Source\Plugins\MicroLight\MicroLightLibrary.h" />
+    <ClInclude Include="Source\Plugins\MicroLight\Plane.h" />
+    <ClInclude Include="Source\Plugins\MicroLight\Quaternion.h" />
+    <ClInclude Include="Source\Plugins\MicroLight\TrackingAPI.h" />
+    <ClInclude Include="Source\Plugins\MicroLight\Vector2.h" />
+    <ClInclude Include="Source\Plugins\MicroLight\Vector3.h" />
+    <ClInclude Include="Source\Plugins\MicroLight\Vector4.h" />
     <ClInclude Include="Source\Prefabs\Cube.h" />
     <ClInclude Include="Source\Prefabs\SolarSystem.h" />
     <ClInclude Include="Source\ProjectManager.h" />

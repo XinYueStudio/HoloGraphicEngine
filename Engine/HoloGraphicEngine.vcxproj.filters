@@ -41,6 +41,30 @@
     <ClCompile Include="Source\Prefabs\SolarSystem.cpp">
       <Filter>Prefabs</Filter>
     </ClCompile>
+    <ClCompile Include="Source\Plugins\MicroLight\MicroLightIRTracking.cpp">
+      <Filter>Plugins\MicroLight</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Plugins\MicroLight\MicroLightLibrary.cpp">
+      <Filter>Plugins\MicroLight</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Plugins\MicroLight\TrackingAPI.cpp">
+      <Filter>Plugins\MicroLight</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Plugins\MicroLight\Matrix2.cpp">
+      <Filter>Plugins\MicroLight\Maths</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Plugins\MicroLight\Matrix3.cpp">
+      <Filter>Plugins\MicroLight\Maths</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Plugins\MicroLight\Matrix3x3.cpp">
+      <Filter>Plugins\MicroLight\Maths</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Plugins\MicroLight\Matrix4.cpp">
+      <Filter>Plugins\MicroLight\Maths</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Plugins\MicroLight\Matrix4x4.cpp">
+      <Filter>Plugins\MicroLight\Maths</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Core">
@@ -66,6 +90,15 @@
     </Filter>
     <Filter Include="Utilities">
       <UniqueIdentifier>{4f660dfd-f02a-4c35-ac60-f77fb9905819}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugins">
+      <UniqueIdentifier>{68548663-fb42-4f28-8bc8-432eedc364ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugins\MicroLight">
+      <UniqueIdentifier>{524b6244-11e6-4a2f-8e94-1f67e3211696}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Plugins\MicroLight\Maths">
+      <UniqueIdentifier>{9ae91846-a068-45d3-9d9a-1b8b819be69a}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -132,6 +165,51 @@
     </ClInclude>
     <ClInclude Include="Source\Utilities\Utilities.h">
       <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Plugins\MicroLight\HoloGraphicUtilities.h">
+      <Filter>Plugins\MicroLight</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Plugins\MicroLight\MicroLightIRTracking.h">
+      <Filter>Plugins\MicroLight</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Plugins\MicroLight\MicroLightLibrary.h">
+      <Filter>Plugins\MicroLight</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Plugins\MicroLight\TrackingAPI.h">
+      <Filter>Plugins\MicroLight</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Plugins\MicroLight\Matrix2.h">
+      <Filter>Plugins\MicroLight\Maths</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Plugins\MicroLight\Matrix3.h">
+      <Filter>Plugins\MicroLight\Maths</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Plugins\MicroLight\Matrix3x3.h">
+      <Filter>Plugins\MicroLight\Maths</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Plugins\MicroLight\Matrix4.h">
+      <Filter>Plugins\MicroLight\Maths</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Plugins\MicroLight\Matrix4x4.h">
+      <Filter>Plugins\MicroLight\Maths</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Plugins\MicroLight\Plane.h">
+      <Filter>Plugins\MicroLight\Maths</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Plugins\MicroLight\Vector2.h">
+      <Filter>Plugins\MicroLight\Maths</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Plugins\MicroLight\Vector3.h">
+      <Filter>Plugins\MicroLight\Maths</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Plugins\MicroLight\Vector4.h">
+      <Filter>Plugins\MicroLight\Maths</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Plugins\MicroLight\Quaternion.h">
+      <Filter>Plugins\MicroLight\Maths</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\PluginInterface.h">
+      <Filter>Core</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
