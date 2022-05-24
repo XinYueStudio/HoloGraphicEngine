@@ -6,7 +6,7 @@
 MicroLightLibrary::MicroLightLibrary(const char* file)
 {
  	 
-	 hMod = LoadLibrary( file);
+	 hMod = LoadLibrary(file);
 	if (hMod)
 	{
 		GPA_Initialization = (FUN0)GetProcAddress(hMod, "Initialization");
@@ -31,8 +31,8 @@ MicroLightLibrary::MicroLightLibrary(const char* file)
 		GPA_GetButtonAxis1D = (FUNJ)GetProcAddress(hMod, "GetButtonAxis1D");
 		GPA_GetButtonAxis2D = (FUNK)GetProcAddress(hMod, "GetButtonAxis2D");
 		GPA_GetCtlComboButtonState = (FUNL)GetProcAddress(hMod, "GetCtlComboButtonState");
-		GPA_Clear = (FUNM)GetProcAddress(hMod, "Clear");;
-		GPA_WriteSample = (FUNN)GetProcAddress(hMod, "WriteSample");
+		//GPA_Clear = (FUNM)GetProcAddress(hMod, "Clear");;
+		//GPA_WriteSample = (FUNN)GetProcAddress(hMod, "WriteSample");
 	}
 	else
 	{
@@ -72,8 +72,8 @@ MicroLightLibrary::~MicroLightLibrary()
 		GPA_GetButtonAxis1D = NULL;
 		GPA_GetButtonAxis2D = NULL;
 		GPA_GetCtlComboButtonState = NULL;
-		GPA_Clear = NULL;
-		GPA_WriteSample = NULL;
+		//GPA_Clear = NULL;
+		//GPA_WriteSample = NULL;
 	}
 }
 
@@ -377,31 +377,31 @@ bool MicroLightLibrary::GetCtlComboButtonState(Controller controller, int * keyc
 	return false;
 }
 
-bool MicroLightLibrary::Clear(HapticsChannel channel)
-{
-	if (hMod)
-	{
-		if (GPA_Clear)
-		{
-			return	GPA_Clear(channel);
-
-		}
-
-	}
-	return false;
-}
-
-bool MicroLightLibrary::WriteSample(HapticsChannel channel, byte sample)
-{
-	if (hMod)
-	{
-		if (GPA_WriteSample)
-		{
-			return GPA_WriteSample(channel, sample);
-		
-			 
-		}
-
-	}
-	return false;
-}
+//bool MicroLightLibrary::Clear(HapticsChannel channel)
+//{
+//	if (hMod)
+//	{
+//		if (GPA_Clear)
+//		{
+//			return	GPA_Clear(channel);
+//
+//		}
+//
+//	}
+//	return false;
+//}
+//
+//bool MicroLightLibrary::WriteSample(HapticsChannel channel, byte sample)
+//{
+//	if (hMod)
+//	{
+//		if (GPA_WriteSample)
+//		{
+//			return GPA_WriteSample(channel, sample);
+//		
+//			 
+//		}
+//
+//	}
+//	return false;
+//}

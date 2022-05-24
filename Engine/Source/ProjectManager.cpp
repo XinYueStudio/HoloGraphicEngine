@@ -55,11 +55,32 @@ namespace  HoloGraphicEngine
 		return Camera_;
 	}
 
+	void ProjectManager::AddPlugin(std::string pluginname, PluginInterface *interface)
+	{
+		PluginInterface_[pluginname.c_str()] = interface;
+		interface->Start(pluginname.c_str());
+	}
+
+	void ProjectManager::RemovePlugin(std::string pluginname)
+	{
+		PluginInterface* interface = PluginInterface_[pluginname];
+		interface->Destroy();
+		PluginInterface_.erase(pluginname);
+	}
+
 
 	// Cleanup managers
 	ProjectManager::~ProjectManager() {
 		// Delete Scene Manager
 		if (Scene_)
 			delete Scene_;
+
+		// Delete Plugins
+		for (auto interface : PluginInterface_)
+		{
+			interface.second->Destroy();
+			delete interface.second;
+		}
+		PluginInterface_.clear();
 	}
 }

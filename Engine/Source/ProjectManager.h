@@ -50,6 +50,12 @@ namespace  HoloGraphicEngine
 		Camera* GetCamera() const;
 
  
+ 
+		void AddPlugin(std::string pluginname, PluginInterface* interface);
+
+		void RemovePlugin(std::string pluginname);
+
+
 	private:
 
 		/* Engine's main Scene manager object */

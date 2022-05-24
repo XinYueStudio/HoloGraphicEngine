@@ -31,11 +31,13 @@ bool MicroLightIRTracking::Init()
 	 
 }
 
-bool MicroLightIRTracking::Reset()
+
+
+bool MicroLightIRTracking::Shutdown()
 {
 	if (mLibrary)
 	{
-		return mLibrary->Reset(Controller::All);
+		return mLibrary->ShutDown();
 	}
 	else
 	{
@@ -43,11 +45,11 @@ bool MicroLightIRTracking::Reset()
 	}
 }
 
-bool MicroLightIRTracking::Shutdown()
+bool MicroLightIRTracking::Reset()
 {
 	if (mLibrary)
 	{
-		return mLibrary->ShutDown();
+		return mLibrary->Reset(Controller::All);
 	}
 	else
 	{

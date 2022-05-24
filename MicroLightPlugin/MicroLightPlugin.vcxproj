@@ -19,6 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Manager\MicroLightPluginForHoloGraphicEngine.cpp" />
     <ClCompile Include="Math\Matrix2.cpp" />
     <ClCompile Include="Math\Matrix3.cpp" />
     <ClCompile Include="Math\Matrix3x3.cpp" />
@@ -30,6 +31,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Algorithm\HoloGraphicUtilities.h" />
+    <ClInclude Include="Manager\MicroLightPluginForHoloGraphicEngine.h" />
     <ClInclude Include="Math\Matrix2.h" />
     <ClInclude Include="Math\Matrix3.h" />
     <ClInclude Include="Math\Matrix3x3.h" />
@@ -43,6 +45,9 @@
     <ClInclude Include="Tracking\MicroLightIRTracking.h" />
     <ClInclude Include="Tracking\MicroLightLibrary.h" />
     <ClInclude Include="Tracking\TrackingAPI.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Tracking\Dll\ImageDll.dll" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
@@ -69,7 +74,7 @@
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v141</PlatformToolset>
-    <CharacterSet>Unicode</CharacterSet>
+    <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
@@ -110,19 +115,22 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
-      <AdditionalIncludeDirectories>$(ProjectDir)Math;$(ProjectDir)Algorithm;$(ProjectDir)Controller;$(ProjectDir)Manager;$(ProjectDir)Tracking;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)Math;$(ProjectDir)Algorithm;$(ProjectDir)Controller;$(ProjectDir)Manager;$(ProjectDir)Tracking;$(SolutionDir)Engine\Source;$(SolutionDir)Engine\Dependencies\freeglut\include\GL\;$(SolutionDir)Engine\Dependencies\glew\include\;$(SolutionDir)Engine\Dependencies\glm\;$(SolutionDir)Engine\Dependencies\;$(SolutionDir)Tests\Sphere\Source;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
+    <PostBuildEvent>
+      <Command>xcopy /Y "$(ProjectDir)Tracking\Dll\*" "$(TargetDir)*"</Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>

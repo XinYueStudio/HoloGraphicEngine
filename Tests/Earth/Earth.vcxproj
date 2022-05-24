@@ -22,7 +22,7 @@
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{1DBB78AD-0F29-4DDD-ABB3-E41EE0D6F68D}</ProjectGuid>
     <RootNamespace>SolarSystem</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -81,7 +81,7 @@
     </ClCompile>
     <Link>
       <AdditionalLibraryDirectories>$(TargetDir);$(SolutionDir)Engine\Dependencies\freeglut\lib\;$(SolutionDir)Engine\Dependencies\glew\lib\;$(SolutionDir)Engine\Dependencies\soil2\lib\</AdditionalLibraryDirectories>
-      <AdditionalDependencies>soil2.lib;opengl32.lib;freeglut.lib;glew32.lib;HoloGraphicEngine.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>soil2.lib;opengl32.lib;freeglut.lib;glew32.lib;HoloGraphicEngine.lib;MicroLightPlugin.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
       <Command>

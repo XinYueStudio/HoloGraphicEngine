@@ -1,0 +1,13 @@
+﻿  MicroLightPluginForHoloGraphicEngine.cpp
+  Matrix2.cpp
+  Matrix3.cpp
+  Matrix3x3.cpp
+  Matrix4.cpp
+  Matrix4x4.cpp
+  MicroLightIRTracking.cpp
+  MicroLightLibrary.cpp
+  TrackingAPI.cpp
+  正在生成代码...
+  MicroLightPlugin.vcxproj -> F:\外包\git\HoloGraphicEngine\x64\Debug\MicroLightPlugin.lib
+  F:\外包\git\HoloGraphicEngine\MicroLightPlugin\Tracking\Dll\ImageDll.dll
+  复制了 1 个文件

@@ -10,6 +10,10 @@
 #include "../Source/Render/Shader.h"
 #include "../Source/Utilities/Utilities.h"
 
+#include "../../MicroLightPlugin/Manager/MicroLightPluginForHoloGraphicEngine.h"
+
+#include <string>
+
 using namespace HoloGraphicEngine;
 
 int main(int argc, char **argv)
@@ -85,6 +89,19 @@ int main(int argc, char **argv)
 	// Add cube to Engine's Model Manager
 	Project->GetScene()->AddModel3D("skybox", skybox);
 	Project->GetScene()->AddModel3D("system", system);
+
+	//Creat MicroLightPlugin and add to run
+
+	MicroLightPluginForHoloGraphicEngine* mMicroLightPlugin = new MicroLightPluginForHoloGraphicEngine();
+
+
+	string argv_str(argv[0]);
+	string base = argv_str.substr(0, argv_str.find_last_of("/"));
+	base = argv_str.substr(0, argv_str.find_last_of("\\"));
+
+	string FullPath = base + "\\ImageDll.dll";
+	//Set Image.dll FullPath
+	Project->AddPlugin(FullPath, mMicroLightPlugin);
 
 	// Run the Engine
 	Project->Run();

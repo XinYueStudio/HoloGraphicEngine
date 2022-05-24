@@ -1,4 +1,19 @@
 ﻿C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(391,5): warning MSB8028: 中间目录(x64\Debug\)包含从另一个项目(Engine.vcxproj)共享的文件。   这会导致错误的清除和重新生成行为。
+  init_glew.cpp
+  init_glut.cpp
+  Cube.cpp
+  SolarSystem.cpp
+  ProjectManager.cpp
+  Earth.cpp
+  Quad.cpp
+  Skybox.cpp
+  Sphere.cpp
+  Triangle.cpp
+  Camera.cpp
+  Model.cpp
+  Scene.cpp
+  Shader.cpp
+  正在生成代码...
   HoloGraphicEngine.vcxproj -> F:\外包\git\HoloGraphicEngine\x64\Debug\HoloGraphicEngine.lib
   复制了 0 个文件
   F:\外包\git\HoloGraphicEngine\Engine\Source\Resources\Shaders\cube_fragment_shader.glsl

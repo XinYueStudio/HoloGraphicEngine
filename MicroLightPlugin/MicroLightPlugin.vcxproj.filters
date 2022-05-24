@@ -16,6 +16,9 @@
     <Filter Include="Tracking">
       <UniqueIdentifier>{648f0074-fe28-4c99-9e4d-bbb027903116}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Tracking\Dll">
+      <UniqueIdentifier>{cdc9b443-a36c-4562-9278-b1598220c4dd}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Math\Matrix2.cpp">
@@ -41,6 +44,9 @@
     </ClCompile>
     <ClCompile Include="Tracking\TrackingAPI.cpp">
       <Filter>Tracking</Filter>
+    </ClCompile>
+    <ClCompile Include="Manager\MicroLightPluginForHoloGraphicEngine.cpp">
+      <Filter>Manager</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -86,5 +92,13 @@
     <ClInclude Include="Tracking\TrackingAPI.h">
       <Filter>Tracking</Filter>
     </ClInclude>
+    <ClInclude Include="Manager\MicroLightPluginForHoloGraphicEngine.h">
+      <Filter>Manager</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Tracking\Dll\ImageDll.dll">
+      <Filter>Tracking\Dll</Filter>
+    </None>
   </ItemGroup>
 </Project>

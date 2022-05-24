@@ -1,1 +1,6 @@
-﻿  Solar-System.vcxproj -> F:\外包\HoloGraphicEngine\x64\Debug\Test.Solar-System.exe
+﻿  main.cpp
+soil2.lib(etc1_utils.obj) : warning LNK4099: 未找到 PDB“soil2-debug.pdb”(使用“soil2.lib(etc1_utils.obj)”或在“F:\外包\git\HoloGraphicEngine\x64\Debug\soil2-debug.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+soil2.lib(image_DXT.obj) : warning LNK4099: 未找到 PDB“soil2-debug.pdb”(使用“soil2.lib(image_DXT.obj)”或在“F:\外包\git\HoloGraphicEngine\x64\Debug\soil2-debug.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+soil2.lib(image_helper.obj) : warning LNK4099: 未找到 PDB“soil2-debug.pdb”(使用“soil2.lib(image_helper.obj)”或在“F:\外包\git\HoloGraphicEngine\x64\Debug\soil2-debug.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+soil2.lib(SOIL2.obj) : warning LNK4099: 未找到 PDB“soil2-debug.pdb”(使用“soil2.lib(SOIL2.obj)”或在“F:\外包\git\HoloGraphicEngine\x64\Debug\soil2-debug.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+  Solar-System.vcxproj -> F:\外包\git\HoloGraphicEngine\x64\Debug\Test.Solar-System.exe

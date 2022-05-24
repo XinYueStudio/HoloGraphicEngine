@@ -84,7 +84,7 @@
     </ClCompile>
     <Link>
       <AdditionalLibraryDirectories>$(TargetDir);$(SolutionDir)Engine\Dependencies\freeglut\lib\;$(SolutionDir)Engine\Dependencies\glew\lib\;$(SolutionDir)Engine\Dependencies\soil2\lib\</AdditionalLibraryDirectories>
-      <AdditionalDependencies>soil2.lib;opengl32.lib;freeglut.lib;glew32.lib;HoloGraphicEngine.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>soil2.lib;opengl32.lib;freeglut.lib;glew32.lib;HoloGraphicEngine.lib;MicroLightPlugin.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
     <PostBuildEvent>
       <Command>

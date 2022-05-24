@@ -92,8 +92,8 @@ typedef bool(*FUNI)(Controller, Button);
 typedef  float(*FUNJ)(Axis1D);
 typedef bool(*FUNK)(Axis2D, float*, float*);
 typedef bool(*FUNL)(Controller , int*);
-typedef bool(*FUNM)(HapticsChannel);
-typedef bool(*FUNN)(HapticsChannel , byte);
+//typedef bool(*FUNM)(HapticsChannel);
+//typedef bool(*FUNN)(HapticsChannel , byte);
 
 
 
@@ -125,8 +125,8 @@ public:
 	float GetButtonAxis1D(Axis1D axis1D);
 	bool GetButtonAxis2D(Axis2D axis2D, float*  x, float*  y);
 	bool GetCtlComboButtonState(Controller controller, int*  keycode);
-	bool Clear(HapticsChannel channel);
-	bool WriteSample(HapticsChannel channel, byte sample);
+	//bool Clear(HapticsChannel channel);
+	//bool WriteSample(HapticsChannel channel, byte sample);
 
 
 	HMODULE hMod = NULL;
@@ -156,8 +156,8 @@ private:
 	FUNJ GPA_GetButtonAxis1D = NULL;
 	FUNK GPA_GetButtonAxis2D = NULL;
 	FUNL GPA_GetCtlComboButtonState = NULL;
-	FUNM GPA_Clear = NULL;
-	FUNN GPA_WriteSample = NULL;
+	//FUNM GPA_Clear = NULL;
+	//FUNN GPA_WriteSample = NULL;
 };
 
 

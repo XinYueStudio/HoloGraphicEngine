@@ -9,8 +9,9 @@ public:
 	~MicroLightIRTracking() {};
 
 	virtual	bool Init();
-	virtual	bool Reset();
 	virtual	bool Shutdown();
+
+	virtual	bool Reset();
 	virtual	int GetActiveDeviceCount();
 	virtual	int GetActiveDeviceId(int index);
 	virtual	bool IsActive(Controller controller) ;
